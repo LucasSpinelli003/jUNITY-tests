@@ -2,26 +2,18 @@ package br.com.fiap.model;
 
 public class Calculadora {
 
-    private Integer result;
+    private Double result;
 
     public Calculadora() {}
-    public Calculadora(Integer result) {
+    public Calculadora(Double result) {
         this.result = result;
     }
 
-    public double division(Integer firstValue, Integer secondValue){
-        result = firstValue / secondValue;
-        return result;
-    };
-    public Integer multiply(Integer firstValue, Integer secondValue){
-        result = firstValue * secondValue;
-        return result;
-    };
-    public Integer subtraction(Integer firstValue, Integer secondValue){
+    public Double subtraction(Double firstValue, Double secondValue){
         result = firstValue - secondValue;
         return result;
     };
-    public Integer sum(Integer firstValue, Integer secondValue){
+    public Double sum(Double firstValue, Double secondValue){
         result = firstValue + secondValue;
         return result;
     };
@@ -30,7 +22,7 @@ public class Calculadora {
         return result;
     }
 
-    public void setResult(Integer result) {
+    public void setResult(Double result) {
         this.result = result;
     }
 }
